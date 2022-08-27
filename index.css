@@ -1,0 +1,26 @@
+body {
+    background-image: url("images/main_background.png");
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   }
+
+.mainButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+
+    position: absolute;
+    width: 387px;
+    height: 60px;
+    left: calc(50% - 387px/2 - 0.5px);
+    top: 787px;
+
+    background: #62A1EB;
+    border-radius: 8px;
+}
