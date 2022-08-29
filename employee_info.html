@@ -8,14 +8,19 @@
     <title>Document</title>
 </head>
 <body>
+    <button class="previous">&#8249;</button>
     <p1>თანამშრომლის ინფო</p1>
     <p1>ლეპტოპის მახასიათებლები</p1>
     <form>
-        <label>სახელი</label>
-        <input type="text" id="fName" placeholder="გელა">
-        <br>
-        <label>გვარი</label>
-        <input type="text" id="lName" placeholder="გელაშვილი">
+        <div class="flexContainer">
+            <label>სახელი</label>
+            <input type="text" id="fName" placeholder="გელა">
+            <small class="smallText">მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+
+            <label>გვარი</label>
+            <input type="text" id="lName" placeholder="გელაშვილი">
+            <small class="smallText">მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+        </div>
         <br>
         <select required>
             <option value="" disabled selected hidden>თიმი</option>
@@ -27,10 +32,15 @@
         <br>
         <label>მეილი</label>
         <input type="email" id="email" placeholder="name@email.com">
+        <small class="smallText">უნდა მთავრდებოდეს @redberry.ge-ით</small>
         <br>
         <label>ტელეფონის ნომერი</label>
-        <input type="number" id="phoneNumber" placeholder="+995 500 12 34 56">
+        <input type="tel" class="phoneNumber" id="phoneNumber" placeholder="+995 500 12 34 56">
+        <small class="smallText">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</small>
     </form>
-    
 </body>
+<footer>
+    <img id="lowerLogo" src="/images/logo_footer.png" alt="Can't load image">
+</footer>
+
 </html>
