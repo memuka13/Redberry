@@ -33,6 +33,12 @@ header {
     line-height: 24px;
     color: white;
 }
+.mainButtons:hover {
+    background-color: #317AD0;
+}
+.mainButtons:focus {
+    background-color: #1A5DAB;
+}
 
 #addItems {
     position: absolute;
