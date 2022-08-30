@@ -1,0 +1,31 @@
+body {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    background-color: #F7F7F7;
+}
+form {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    border-radius: 18px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+p1 {
+    position: relative;
+    left: 30%;
+    width: 40%;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    height: 85px;
+    left: calc(50% - 85px/2);
+}
