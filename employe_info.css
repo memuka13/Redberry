@@ -59,10 +59,10 @@ footer {
     width: 94%;
 }
 
-.flexContainer {
+/* .flexContainer {
     display: flex;
     flex-wrap: nowrap;
-}
+} */
 
 .smallText {
     width: 407px;
