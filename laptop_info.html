@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="employe_info.css">
+    <link rel="stylesheet" href="laptop_info.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,102 @@
 </head>
 <body>
     <button class="previous">&#8249;</button>
-    <p1>თანამშრომლის ინფო</p1>
-    <p1>ლეპტოპის მახასიათებლები</p1>
+    <fieldset>
+        <p1>თანამშრომლის ინფო</p1>
+        <p1>ლეპტოპის მახასიათებლები</p1>
+    </fieldset>
     <form>
-           
+        <fieldset>
+            <input class="uploadImage" type="file" accept=".png , .jpg" value="drag the file">
+            </input>
+        </fieldset>
+
+        <fieldset>
+            <section>
+                <label>ლეპტოპის სახელი</label>
+                <input type="text" class="input" id="laptopName" placeholder="HP"></input>
+                <small>ლათინური ასოები, ციფრები, !@#$%^&*()_+=</small>
+            </section>
+            <section>
+                <select class="selection" id="brand" required>
+                    <option value="" disabled selected hidden>ლეპტოპის ბრენდი</option>
+                </select>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <section>
+                <select class="selection" id="CPU" required>
+                    <option value="" disabled selected hidden>CPU</option>    
+                </select>
+            </section>
+            <section>
+                <label>CPU-ს ბირთვი</label>
+                <input type="number" class="input" id="cpuCore" placeholder="14">
+                <small>მხოლოდ ციფრები</small>
+            </section>
+            <section>
+                <label>CPU-ს ნაკადი</label>
+                <input type="number" class="input" id="cpuLogicalProcessors" placeholder="365">
+                <small>მხოლოდ ციფრები</small>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <section>
+                <label>ლეპტოპის RAM (GB)</label>
+                <input type="number" class="input" id="ram" placeholder="16">
+                <small>მხოლოდ ციფრები</small>
+            </section>
+            <section>
+                <label>მეხსიერების ტიპი</label>
+                <fieldset>
+                    <input type="radio" value="SSD" class="input" id="SSD">
+                    <label for="SSD">SSD</label>
+                    <input type="radio" value="HDD" class="input" id="HDD">
+                    <label for="HDD">HDD</label>
+                </fieldset>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <section>
+                <label>შეძენის რიცხვი (არჩევითი)</label>
+                <input type="date" class="input" id="date" placeholder="დდ/თთ/წწწწ">
+            </section>
+            <section>
+                <label>ლეპტოპის ფასი</label>
+                <input type="number" class="input" id="price" placeholder="0000">
+                <small>მხოლოდ ციფრები</small>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <section>
+                <label>ლეპტოპის მდგომარეობა</label>
+                <fieldset>
+                    <input type="radio" value="new" class="input" id="new">
+                    <label for="new">ახალი</label>
+                    <input type="radio" value="old" class="input" id="old">
+                    <label for="HDD">მეორადი</label>
+                </fieldset>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <p2 id="back">უკან</p2>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit" id="submit">დამახსოვრება</button>
+        </fieldset>
+
 
         
     </form>
 </body>
+
+<br>
 <footer>
     <img id="lowerLogo" src="/images/logo_footer.png" alt="Can't load image">
 </footer>

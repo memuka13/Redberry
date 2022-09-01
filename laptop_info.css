@@ -5,12 +5,22 @@ body {
     background-color: #F7F7F7;
 }
 form {
-    position: absolute;
-    width: 50%;
-    left: 25%;
+    /* position: absolute; */
+    /* width: 100%; */
+    width: 1126px;
+    height: 1571px;
+    display: block;
+    /* left: 347px;
+    right: 347px; */
     border-radius: 18px;
     background-color: #ffffff;
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    display: flex;
 }
 
 p1 {
@@ -23,10 +33,43 @@ p1 {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    display: block;
     width: 85px;
     height: 85px;
-    left: calc(50% - 85px/2);
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#laptopName {
+    width: 407px;
+}
+
+#brand {
+    width: 408px;
+}
+
+.uploadImage {
+    height: 423px;
+    width: 878px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F7F7F7;
+    border: 2px dashed #4386A9;
+    border-radius: 18px;
+}
+
+.input {
+    display: flex;
+    height: 60px;
+    border: 1.8px solid #8AC0E2;
+    border-radius: 8px;
+}
+
+.selection {
+    display: flex;
+    height: 60px;
+    background: #EBEBEB;
+    border-radius: 8px;
+
+}
