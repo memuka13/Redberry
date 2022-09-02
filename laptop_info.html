@@ -9,7 +9,7 @@
 </head>
 <body>
     <button class="previous">&#8249;</button>
-    <fieldset>
+    <fieldset id="title">
         <p1>თანამშრომლის ინფო</p1>
         <p1>ლეპტოპის მახასიათებლები</p1>
     </fieldset>
@@ -26,7 +26,7 @@
                 <small>ლათინური ასოები, ციფრები, !@#$%^&*()_+=</small>
             </section>
             <section>
-                <select class="selection" id="brand" required>
+                <select class="selection" id="laptopBrand" required>
                     <option value="" disabled selected hidden>ლეპტოპის ბრენდი</option>
                 </select>
             </section>
@@ -34,18 +34,18 @@
 
         <fieldset>
             <section>
-                <select class="selection" id="CPU" required>
+                <select class="selection" id="cpu" required>
                     <option value="" disabled selected hidden>CPU</option>    
                 </select>
             </section>
             <section>
                 <label>CPU-ს ბირთვი</label>
-                <input type="number" class="input" id="cpuCore" placeholder="14">
+                <input type="number" class="input" id="cpuCore" placeholder="14" required>
                 <small>მხოლოდ ციფრები</small>
             </section>
             <section>
                 <label>CPU-ს ნაკადი</label>
-                <input type="number" class="input" id="cpuLogicalProcessors" placeholder="365">
+                <input type="number" class="input" id="cpuLogicalProcessors" placeholder="365" required>
                 <small>მხოლოდ ციფრები</small>
             </section>
         </fieldset>
@@ -53,12 +53,13 @@
         <fieldset>
             <section>
                 <label>ლეპტოპის RAM (GB)</label>
-                <input type="number" class="input" id="ram" placeholder="16">
+                <input type="number" class="input" id="ram" placeholder="16" required>
                 <small>მხოლოდ ციფრები</small>
             </section>
             <section>
                 <label>მეხსიერების ტიპი</label>
-                <fieldset>
+                <fieldset id="memoryType">
+                    <!-- აქ როგორ გავაკეთო რომ მონიშვნა იყოს სავალდებულო? -->
                     <input type="radio" value="SSD" class="input" id="SSD">
                     <label for="SSD">SSD</label>
                     <input type="radio" value="HDD" class="input" id="HDD">
@@ -74,7 +75,7 @@
             </section>
             <section>
                 <label>ლეპტოპის ფასი</label>
-                <input type="number" class="input" id="price" placeholder="0000">
+                <input type="number" class="input" id="price" placeholder="0000" required>
                 <small>მხოლოდ ციფრები</small>
             </section>
         </fieldset>
@@ -83,6 +84,7 @@
             <section>
                 <label>ლეპტოპის მდგომარეობა</label>
                 <fieldset>
+                    <!-- აქ როგორ გავაკეთო რომ მონიშვნა იყოს სავალდებულო? -->
                     <input type="radio" value="new" class="input" id="new">
                     <label for="new">ახალი</label>
                     <input type="radio" value="old" class="input" id="old">

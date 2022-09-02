@@ -5,13 +5,9 @@ body {
     background-color: #F7F7F7;
 }
 form {
-    /* position: absolute; */
-    /* width: 100%; */
     width: 1126px;
     height: 1571px;
     display: block;
-    /* left: 347px;
-    right: 347px; */
     border-radius: 18px;
     background-color: #ffffff;
     padding: 20px;
@@ -21,15 +17,15 @@ form {
 
 fieldset {
     display: flex;
+    /* border-color: transparent; */
 }
 
 p1 {
-    position: relative;
-    left: 30%;
-    width: 40%;
-    margin: 10px;
+    display: block;
+    width: 1126px/2;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
-    line-height: 24px;
 }
 
 footer {
@@ -40,12 +36,38 @@ footer {
     margin-right: auto;
 }
 
-#laptopName {
+small {
+    font-weight: 300;
+    font-size: 14px;
+    color: #2E2E2E;
+}
+
+section {
+    display: block;
+    margin: auto;
+}
+
+#laptopName, #ram, #date, #price, #memoryType {
     width: 407px;
 }
 
 #brand {
     width: 408px;
+}
+
+#cpu {
+    width: 277px;
+}
+
+#cpuCore, #cpuLogicalProcessors {
+    width: 324px;
+}
+
+#title {
+    display: flex;
+    width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .uploadImage {
@@ -71,5 +93,4 @@ footer {
     height: 60px;
     background: #EBEBEB;
     border-radius: 8px;
-
 }
