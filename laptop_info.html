@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="laptop_info.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="previous">&#8249;</button>
+    <a href="index.html">
+        <button class="previous">&#8249;</button>
+    </a>
     <fieldset id="title">
-        <p1>თანამშრომლის ინფო</p1>
-        <p1>ლეპტოპის მახასიათებლები</p1>
+        <p1>
+            <a href="employee_info.html">თანამშრომლის ინფო</a>
+        </p1>
+        <p1>
+            <a href="laptop_info.html">ლეპტოპის მახასიათებლები</a>
+        </p1>
     </fieldset>
     <form>
         <fieldset>
@@ -26,7 +33,7 @@
                 <small>ლათინური ასოები, ციფრები, !@#$%^&*()_+=</small>
             </section>
             <section>
-                <select class="selection" id="laptopBrand" required>
+                <select class="selection" id="brand" required>
                     <option value="" disabled selected hidden>ლეპტოპის ბრენდი</option>
                 </select>
             </section>

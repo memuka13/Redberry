@@ -1,0 +1,191 @@
+body {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    background-color: #F7F7F7;
+}
+
+header {
+    position: absolute;
+    width: 112px;
+    height: 18px;
+    left: calc(50% - 112px/2);
+}
+
+form {
+    width: 1126px;
+    height: 1571px;
+    display: block;
+    border-radius: 18px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1.8px solid #8AC0E2;
+    border-radius: 8px;
+    height: 20px;
+} */
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #EBEBEB;
+    border-radius: 8px;
+}
+
+fieldset {
+    display: flex;
+    /* border-color: transparent; */
+}
+
+p1 {
+    display: flex;
+    /* width: 1126px/2; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+footer {
+    display: block;
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+small {
+    font-weight: 300;
+    font-size: 14px;
+    color: #2E2E2E;
+}
+
+section {
+    display: block;
+    margin: auto;
+}
+
+#mainBackground {
+    background-color: white;
+}
+
+#email, #phoneNumber {
+    width: 878px;
+}
+
+#fName, #lName, #laptopName, #ram, #date, #price, #memoryType {
+    width: 407px;
+}
+
+#brand {
+    width: 408px;
+}
+
+#cpu {
+    width: 277px;
+}
+
+#cpuCore, #cpuLogicalProcessors {
+    width: 324px;
+}
+
+#title {
+    display: flex;
+    width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.backgroundImage {
+    margin-top: 100px;
+    margin-left: calc(50% - 781px/2);
+}
+.mainButtons {
+    display: block;
+    width: 387px;
+    height: 60px;
+    margin: 30px auto;
+
+    background: #62A1EB;
+    border-radius: 8px;
+    border-color: transparent;
+    
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.mainButtons:hover {
+    background-color: #317AD0;
+}
+
+.mainButtons:focus {
+    background-color: #1A5DAB;
+}
+
+.smallText {
+    width: 407px;
+    height: 21px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #2E2E2E;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.previous {
+    background-color: #D9D9D9;
+    color: #2E2E2E;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    border-color: transparent;
+}
+
+.next {
+    width: 176px;
+    height: 60px;
+    margin: 10px;
+    right: 10%;
+    background: #62A1EB;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.uploadImage {
+    height: 423px;
+    width: 878px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F7F7F7;
+    border: 2px dashed #4386A9;
+    border-radius: 18px;
+}
+
+.input {
+    display: flex;
+    height: 60px;
+    border: 1.8px solid #8AC0E2;
+    border-radius: 8px;
+}
+
+.selection {
+    display: flex;
+    height: 60px;
+    background: #EBEBEB;
+    border-radius: 8px;
+}

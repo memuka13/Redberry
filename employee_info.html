@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="employe_info.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,61 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="previous">&#8249;</button>
-    <p1>თანამშრომლის ინფო</p1>
-    <p1>ლეპტოპის მახასიათებლები</p1>
+    <a href="index.html">
+        <button class="previous">&#8249;</button>
+    </a>
+
+    <fieldset id="title">
+            <p1>
+                <a href="employee_info.html">თანამშრომლის ინფო</a>
+            </p1>
+            <p1>
+                <a href="laptop_info.html">ლეპტოპის მახასიათებლები</a>
+            </p1>
+    </fieldset>
     <form>
-        <div class="flexContainer">
-            <div>
-            <label>სახელი</label>
-            <input type="text" id="fName" placeholder="გელა">
-            <!-- <small class="smallText">მინიმუმ 2 სიმბოლო, ქართული ასოები</small> -->
-        </div>
-        <div>        
-            <label>გვარი</label>
-            <input type="text" id="lName" placeholder="გელაშვილი">
-            <!-- <small class="smallText">მინიმუმ 2 სიმბოლო, ქართული ასოები</small> -->
-        </div>
-        </div>
-        <br>
-        <select required>
-            <option value="" disabled selected hidden>თიმი</option>
-        </select>
-        <br>
-        <select required>
-            <option value="" disabled selected hidden>პოზიცია</option>
-        </select>
-        <br>
-        <label>მეილი</label>
-        <input type="email" id="email" placeholder="name@email.com">
-        <small class="smallText">უნდა მთავრდებოდეს @redberry.ge-ით</small>
-        <br>
-        <label>ტელეფონის ნომერი</label>
-        <input type="tel" class="phoneNumber" id="phoneNumber" placeholder="+995 500 12 34 56">
-        <small class="smallText">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</small>
-        <button class="submit">შემდეგ</button>
-        <br><br><br>
+        <fieldset>
+            <section>
+                <label>სახელი</label>
+                <input type="text" class="input" id="fName" placeholder="გელა">
+                <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+            </section>
+
+            <section>
+                <label>გვარი</label>
+                <input type="text" class="input" id="lName" placeholder="გელაშვილი">
+                <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <select id="team" required>
+                <option value="" disabled selected hidden>თიმი</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <select id="position" required>
+                <option value="" disabled selected hidden>პოზიცია</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label>მეილი</label>
+            <input type="email" class="input" id="email" placeholder="name@email.com">
+            <small>უნდა მთავრდებოდეს @redberry.ge-ით</small>
+        </fieldset>
+
+        <fieldset>
+            <label>ტელეფონის ნომერი</label>
+            <input type="tel" class="input" id="phoneNumber" placeholder="+995 500 12 34 56">
+            <small>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</small>
+        </fieldset>
+
+        <fieldset>
+            <a href="laptop_info.html">
+                <button class="next">შემდეგ</button>
+            </a>
+        </fieldset>
     </form>
 </body>
 <footer>
