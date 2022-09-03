@@ -1,0 +1,96 @@
+body {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    background-color: #F7F7F7;
+}
+form {
+    width: 1126px;
+    height: 1571px;
+    display: block;
+    border-radius: 18px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    display: flex;
+    /* border-color: transparent; */
+}
+
+p1 {
+    display: block;
+    width: 1126px/2;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+footer {
+    display: block;
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+small {
+    font-weight: 300;
+    font-size: 14px;
+    color: #2E2E2E;
+}
+
+section {
+    display: block;
+    margin: auto;
+}
+
+#laptopName, #ram, #date, #price, #memoryType {
+    width: 407px;
+}
+
+#brand {
+    width: 408px;
+}
+
+#cpu {
+    width: 277px;
+}
+
+#cpuCore, #cpuLogicalProcessors {
+    width: 324px;
+}
+
+#title {
+    display: flex;
+    width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uploadImage {
+    height: 423px;
+    width: 878px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F7F7F7;
+    border: 2px dashed #4386A9;
+    border-radius: 18px;
+}
+
+.input {
+    display: flex;
+    height: 60px;
+    border: 1.8px solid #8AC0E2;
+    border-radius: 8px;
+}
+
+.selection {
+    display: flex;
+    height: 60px;
+    background: #EBEBEB;
+    border-radius: 8px;
+}
