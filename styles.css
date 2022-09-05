@@ -1,3 +1,9 @@
+a{
+    text-decoration: none;
+    all: unset;
+    cursor: pointer;
+}
+
 body {
     font-family: 'Helvetica Neue';
     font-style: normal;
@@ -13,8 +19,6 @@ header {
 }
 
 form {
-    width: 1126px;
-    height: 1571px;
     display: block;
     border-radius: 18px;
     background-color: #ffffff;
@@ -73,33 +77,89 @@ section {
     margin: auto;
 }
 
+button {
+    width: 297px;
+    height: 60px;
+    background: #62A1EB;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+p2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
 #mainBackground {
     background-color: white;
 }
 
-#email, #phoneNumber {
+#email, #phone_number {
     width: 878px;
 }
 
-#fName, #lName, #laptopName, #ram, #date, #price, #memoryType {
+#name, #surname, #laptop_name, #laptop_ram, #laptop_purchase_date, #laptop_price, #storage_type {
     width: 407px;
 }
 
-#brand {
+#laptop_brand_id {
     width: 408px;
 }
 
-#cpu {
+#laptop_cpu {
     width: 277px;
 }
 
-#cpuCore, #cpuLogicalProcessors {
+#laptop_cpu_cores, #laptop_cpu_threads {
     width: 324px;
 }
 
 #title {
     display: flex;
     width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#finishPage {
+    background-color: #4A4A4A;
+}
+
+#successPopup {
+    display: block;
+    background-color: #FFFFFF;
+    width: 847px;
+    height: 537px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainButtonOnFinish {
+    font-weight: 500;
+    font-size: 20px;
+    color: #0089A7;
+}
+
+#formEmployee {
+    width: 1226px;
+    height: 973px;
+}
+
+#formLaptop {
+    width: 1226px;
+    height: 1571px;
+}
+
+#p1Employee {
+    text-decoration: underline;
+}
+
+#p1Laptop {
+    text-decoration: underline;
+}
+
+.successPopup {
     margin-left: auto;
     margin-right: auto;
 }
@@ -156,13 +216,14 @@ section {
 }
 
 .next {
-    width: 176px;
     height: 60px;
-    margin: 10px;
-    right: 10%;
+    width: 176px;
+    margin: auto;
     background: #62A1EB;
     border-radius: 8px;
     border-color: transparent;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .uploadImage {
@@ -189,3 +250,13 @@ section {
     background: #EBEBEB;
     border-radius: 8px;
 }
+
+.itemsList {
+    /* display: flex;
+    width: 1300px; */
+}
+
+.itemsContainer {
+    width: 600px;
+}
+

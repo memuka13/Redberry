@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,24 +15,24 @@
         <p1>
             <a href="employee_info.html">თანამშრომლის ინფო</a>
         </p1>
-        <p1>
+        <p1 id="p1Laptop">
             <a href="laptop_info.html">ლეპტოპის მახასიათებლები</a>
         </p1>
     </fieldset>
-    <form>
+    <form id="formLaptop">
         <fieldset>
-            <input class="uploadImage" type="file" accept=".png , .jpg" value="drag the file">
+            <input class="uploadImage" id="laptop_image" type="file" accept=".png , .jpg" value="drag the file">
             </input>
         </fieldset>
 
         <fieldset>
             <section>
                 <label>ლეპტოპის სახელი</label>
-                <input type="text" class="input" id="laptopName" placeholder="HP"></input>
-                <small>ლათინური ასოები, ციფრები, !@#$%^&*()_+=</small>
+                <input type="text" class="input" id="laptop_name" placeholder="HP"></input>
+                <small id="smalllaptop_name" hidden="ture">ლათინური ასოები, ციფრები, !@#$%^&*()_+=</small>
             </section>
             <section>
-                <select class="selection" id="brand" required>
+                <select class="selection" id="laptop_brand_id" required>
                     <option value="" disabled selected hidden>ლეპტოპის ბრენდი</option>
                 </select>
             </section>
@@ -41,35 +40,34 @@
 
         <fieldset>
             <section>
-                <select class="selection" id="cpu" required>
+                <select class="selection" id="laptop_cpu" required>
                     <option value="" disabled selected hidden>CPU</option>    
                 </select>
             </section>
             <section>
                 <label>CPU-ს ბირთვი</label>
-                <input type="number" class="input" id="cpuCore" placeholder="14" required>
-                <small>მხოლოდ ციფრები</small>
+                <input type="text" class="input" id="laptop_cpu_cores" placeholder="14" required>
+                <small id="smalllaptop_cpu_cores" hidden="ture">მხოლოდ ციფრები</small>
             </section>
             <section>
                 <label>CPU-ს ნაკადი</label>
-                <input type="number" class="input" id="cpuLogicalProcessors" placeholder="365" required>
-                <small>მხოლოდ ციფრები</small>
+                <input type="text" class="input" id="laptop_cpu_threads" placeholder="365" required>
+                <small id="smalllaptop_cpu_threads" hidden="ture">მხოლოდ ციფრები</small>
             </section>
         </fieldset>
 
         <fieldset>
             <section>
                 <label>ლეპტოპის RAM (GB)</label>
-                <input type="number" class="input" id="ram" placeholder="16" required>
-                <small>მხოლოდ ციფრები</small>
+                <input type="text" class="input" id="laptop_ram" placeholder="16" required>
+                <small id="smalllaptop_ram" hidden="ture">მხოლოდ ციფრები</small>
             </section>
             <section>
                 <label>მეხსიერების ტიპი</label>
-                <fieldset id="memoryType">
-                    <!-- აქ როგორ გავაკეთო რომ მონიშვნა იყოს სავალდებულო? -->
-                    <input type="radio" value="SSD" class="input" id="SSD">
+                <fieldset id="storage_type">
+                    <input type="radio" class="input" name="storage" value="SSD" id="laptop_hard_drive_type" required>
                     <label for="SSD">SSD</label>
-                    <input type="radio" value="HDD" class="input" id="HDD">
+                    <input type="radio" class="input" name="storage" value="HDD" id="laptop_hard_drive_type" required>
                     <label for="HDD">HDD</label>
                 </fieldset>
             </section>
@@ -78,12 +76,12 @@
         <fieldset>
             <section>
                 <label>შეძენის რიცხვი (არჩევითი)</label>
-                <input type="date" class="input" id="date" placeholder="დდ/თთ/წწწწ">
+                <input type="date" class="input" id="laptop_purchase_date" placeholder="დდ/თთ/წწწწ">
             </section>
             <section>
                 <label>ლეპტოპის ფასი</label>
-                <input type="number" class="input" id="price" placeholder="0000" required>
-                <small>მხოლოდ ციფრები</small>
+                <input type="text" class="input" id="laptop_price" placeholder="0000">
+                <small id="smalllaptop_price" hidden="true">მხოლოდ ციფრები</small>
             </section>
         </fieldset>
 
@@ -91,11 +89,10 @@
             <section>
                 <label>ლეპტოპის მდგომარეობა</label>
                 <fieldset>
-                    <!-- აქ როგორ გავაკეთო რომ მონიშვნა იყოს სავალდებულო? -->
-                    <input type="radio" value="new" class="input" id="new">
+                    <input type="radio" class="input" name="condition" value="ახალი" id="laptop_state" required>
                     <label for="new">ახალი</label>
-                    <input type="radio" value="old" class="input" id="old">
-                    <label for="HDD">მეორადი</label>
+                    <input type="radio" class="input" name="condition" value="მეორადი" id="laptop_state" required>
+                    <label for="old">მეორადი</label>
                 </fieldset>
             </section>
         </fieldset>
@@ -105,17 +102,18 @@
         </fieldset>
 
         <fieldset>
-            <button type="submit" id="submit">დამახსოვრება</button>
-        </fieldset>
-
-
-        
+            <!-- <a href="finish.html"> -->
+            <div class="next" id="submit" onclick="submitForm()">დამახსოვრება
+            </div>
+        <!-- </a> -->
+        </fieldset>      
     </form>
+    
 </body>
 
 <br>
 <footer>
     <img id="lowerLogo" src="/images/logo_footer.png" alt="Can't load image">
 </footer>
-
+<script src="script.js"></script>
 </html>

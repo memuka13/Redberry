@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,54 +13,58 @@
     </a>
 
     <fieldset id="title">
-            <p1>
+            <p1 id="p1Employee">
                 <a href="employee_info.html">თანამშრომლის ინფო</a>
             </p1>
             <p1>
                 <a href="laptop_info.html">ლეპტოპის მახასიათებლები</a>
             </p1>
     </fieldset>
-    <form>
+    <form id="formEmployee">
         <fieldset>
             <section>
                 <label>სახელი</label>
-                <input type="text" class="input" id="fName" placeholder="გელა">
-                <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+                <input type="text" class="input" id="name" placeholder="გელა" value="">
+                <small id="smallname" hidden="ture">მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
             </section>
 
             <section>
                 <label>გვარი</label>
-                <input type="text" class="input" id="lName" placeholder="გელაშვილი">
-                <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+                <input type="text" class="input" id="surname" placeholder="გელაშვილი">
+                <small id="smallsurname" hidden="ture">მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
             </section>
         </fieldset>
 
         <fieldset>
-            <select id="team" required>
+            <select id="team_id" required>
                 <option value="" disabled selected hidden>თიმი</option>
             </select>
         </fieldset>
         <fieldset>
-            <select id="position" required>
+            <select id="position_id" required>
                 <option value="" disabled selected hidden>პოზიცია</option>
             </select>
         </fieldset>
 
         <fieldset>
-            <label>მეილი</label>
-            <input type="email" class="input" id="email" placeholder="name@email.com">
-            <small>უნდა მთავრდებოდეს @redberry.ge-ით</small>
+            <section>
+                <label>მეილი</label>
+                <input type="email" class="input" id="email" placeholder="name@email.com">
+                <small id="smallemail" hidden="ture">უნდა მთავრდებოდეს @redberry.ge-ით</small>
+            </section>
         </fieldset>
 
         <fieldset>
-            <label>ტელეფონის ნომერი</label>
-            <input type="tel" class="input" id="phoneNumber" placeholder="+995 500 12 34 56">
-            <small>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</small>
+            <section>
+                <label>ტელეფონის ნომერი</label>
+                <input type="tel" class="input" id="phone_number" placeholder="+995 500 12 34 56">
+                <small id="smallphone_number" hidden="ture">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</small>
+            </section>
         </fieldset>
 
         <fieldset>
             <a href="laptop_info.html">
-                <button class="next">შემდეგ</button>
+               <div class="next">შემდეგ</div>
             </a>
         </fieldset>
     </form>
@@ -69,5 +72,5 @@
 <footer>
     <img id="lowerLogo" src="/images/logo_footer.png" alt="Can't load image">
 </footer>
-
+<script src="script.js"></script>
 </html>
